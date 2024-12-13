@@ -138,7 +138,7 @@ struct WrongPlatformView_Previews: PreviewProvider {
               customerInfo: CustomerInfoFixtures.customerInfoWithGoogleSubscriptions,
               displayName: "Play Store"),
         .init(store: .rcBilling,
-              managementURL: URL(string: "https://api.revenuecat.com/rcbilling/v1/customerportal/1234/portal"),
+              managementURL: URL(string: "https://pay.plusye.com/rcbilling/v1/customerportal/1234/portal"),
               customerInfo: CustomerInfoFixtures.customerInfoWithRCBillingSubscriptions,
               displayName: "RCBilling"),
         .init(store: .stripe,

@@ -33,6 +33,6 @@
       "observer_mode" : false
     },
     "method" : "POST",
-    "url" : "https://api.revenuecat.com/v1/receipts"
+    "url" : "https://pay.plusye.com/v1/receipts"
   }
 }

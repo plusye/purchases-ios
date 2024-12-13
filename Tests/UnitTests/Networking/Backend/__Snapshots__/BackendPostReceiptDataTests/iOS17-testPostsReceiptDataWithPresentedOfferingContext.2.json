@@ -44,6 +44,6 @@
       "subscription_group_id" : "sub_group"
     },
     "method" : "POST",
-    "url" : "https://api.revenuecat.com/v1/receipts"
+    "url" : "https://pay.plusye.com/v1/receipts"
   }
 }

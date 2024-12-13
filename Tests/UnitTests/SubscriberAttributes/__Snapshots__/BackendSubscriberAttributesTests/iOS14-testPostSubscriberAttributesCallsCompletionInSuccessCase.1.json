@@ -35,6 +35,6 @@
       }
     },
     "method" : "POST",
-    "url" : "https://api.revenuecat.com/v1/subscribers/abc123/attributes"
+    "url" : "https://pay.plusye.com/v1/subscribers/abc123/attributes"
   }
 }

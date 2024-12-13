@@ -12,7 +12,7 @@ import OSLog
 
 public final class HTTPClient: Sendable {
     
-    static let shared = HTTPClient(domain: URL(string: "https://api.revenuecat.com")!)
+    static let shared = HTTPClient(domain: URL(string: "https://pay.plusye.com")!)
 
     private let domain: URL
     private let headers: [String: String]
@@ -202,8 +202,8 @@ private extension HTTPEndpoint {
             .appendingPathComponent(self.path)
     }
 
-    private static let baseURL = URL(string: "https://api.revenuecat.com/v1/developers/")!
-    private static let internalBaseURL = URL(string: "https://api.revenuecat.com/internal/v1/developers/")!
+    private static let baseURL = URL(string: "https://pay.plusye.com/v1/developers/")!
+    private static let internalBaseURL = URL(string: "https://pay.plusye.com/internal/v1/developers/")!
 
 }
 

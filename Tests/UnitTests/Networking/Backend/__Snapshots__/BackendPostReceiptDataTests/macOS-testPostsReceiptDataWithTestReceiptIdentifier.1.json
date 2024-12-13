@@ -39,6 +39,6 @@
       "test_receipt_identifier" : "12345678-1234-1234-1234-C2C35AE34D09"
     },
     "method" : "POST",
-    "url" : "https://api.revenuecat.com/v1/receipts"
+    "url" : "https://pay.plusye.com/v1/receipts"
   }
 }

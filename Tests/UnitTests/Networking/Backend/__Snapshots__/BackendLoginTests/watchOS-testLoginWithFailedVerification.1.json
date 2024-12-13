@@ -29,6 +29,6 @@
       "new_app_user_id" : "F72BF276-CD70-4C27-BCD2-FC1EFD988FA3"
     },
     "method" : "POST",
-    "url" : "https://api.revenuecat.com/v1/subscribers/identify"
+    "url" : "https://pay.plusye.com/v1/subscribers/identify"
   }
 }

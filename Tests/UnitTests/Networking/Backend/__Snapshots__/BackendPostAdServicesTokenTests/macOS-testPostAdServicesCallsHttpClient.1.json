@@ -24,6 +24,6 @@
       "aad_attribution_token" : "asdf"
     },
     "method" : "POST",
-    "url" : "https://api.revenuecat.com/v1/subscribers/asdf/adservices_attribution"
+    "url" : "https://pay.plusye.com/v1/subscribers/asdf/adservices_attribution"
   }
 }

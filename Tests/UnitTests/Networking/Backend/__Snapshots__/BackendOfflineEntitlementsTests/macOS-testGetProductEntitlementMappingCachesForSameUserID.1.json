@@ -22,6 +22,6 @@
   "request" : {
     "body" : null,
     "method" : "GET",
-    "url" : "https://api.revenuecat.com/v1/product_entitlement_mapping"
+    "url" : "https://pay.plusye.com/v1/product_entitlement_mapping"
   }
 }

@@ -192,7 +192,7 @@ class HTTPRequestTests: TestCase {
     func testUserIDEscapingOnURL() {
         let encodeableUserID = "userid with spaces"
         let encodedUserID = "userid%20with%20spaces"
-        let expectedURL = "https://api.revenuecat.com/v1/subscribers/\(encodedUserID)"
+        let expectedURL = "https://pay.plusye.com/v1/subscribers/\(encodedUserID)"
         let result = HTTPRequest.Path.getCustomerInfo(appUserID: encodeableUserID).url
 
         expect(result?.absoluteString) == expectedURL
@@ -200,8 +200,8 @@ class HTTPRequestTests: TestCase {
 
     func testURLWithNoProxy() {
         let path: HTTPRequest.Path = .health
-        expect(path.url?.absoluteString) == "https://api.revenuecat.com/v1/health"
-        expect(path.url(proxyURL: nil)?.absoluteString) == "https://api.revenuecat.com/v1/health"
+        expect(path.url?.absoluteString) == "https://pay.plusye.com/v1/health"
+        expect(path.url(proxyURL: nil)?.absoluteString) == "https://pay.plusye.com/v1/health"
     }
 
     func testURLWithProxy() {

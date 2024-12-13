@@ -26,6 +26,6 @@
       "new_app_user_id" : "new id"
     },
     "method" : "POST",
-    "url" : "https://api.revenuecat.com/v1/subscribers/identify"
+    "url" : "https://pay.plusye.com/v1/subscribers/identify"
   }
 }

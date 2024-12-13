@@ -26,6 +26,6 @@
       "redemption_token" : "test-redemption-token"
     },
     "method" : "POST",
-    "url" : "https://api.revenuecat.com/v1/subscribers/redeem_purchase"
+    "url" : "https://pay.plusye.com/v1/subscribers/redeem_purchase"
   }
 }

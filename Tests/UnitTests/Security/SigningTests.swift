@@ -294,7 +294,7 @@ class SigningTests: TestCase {
     func testVerifyKnownSignatureWithNonceAndEtag() throws {
         /*
          Signature retrieved with:
-        curl -v 'https://api.revenuecat.com/v1/subscribers/login' \
+        curl -v 'https://pay.plusye.com/v1/subscribers/login' \
         -X GET \
         -H 'X-Nonce: MTIzNDU2Nzg5MGFi' \
         -H 'Authorization: Bearer appl_fFVBVAoYujMZJnepIziGKVjnZBz'
@@ -329,7 +329,7 @@ class SigningTests: TestCase {
     func testVerifyKnownSignatureWithNoNonceAndNoEtag() throws {
         /*
          Signature retrieved with:
-        curl -v 'https://api.revenuecat.com/v1/subscribers/test/offerings' \
+        curl -v 'https://pay.plusye.com/v1/subscribers/test/offerings' \
         -X GET \
         -H 'Authorization: Bearer appl_fFVBVAoYujMZJnepIziGKVjnZBz' \
         -H 'X-Platform: iOS'
@@ -362,7 +362,7 @@ class SigningTests: TestCase {
     func testVerifyKnownSignatureOfEmptyResponseWithNonceAndNoEtagAndNoAPIKey() throws {
         /*
          Signature retrieved with:
-        curl -v 'https://api.revenuecat.com/v1/health' \
+        curl -v 'https://pay.plusye.com/v1/health' \
         -X GET \
         -H 'X-Nonce: MTIzNDU2Nzg5MGFi'
          */
@@ -393,7 +393,7 @@ class SigningTests: TestCase {
     func testVerifyKnownSignatureOf304Response() throws {
         /*
          Signature retrieved with:
-        curl -v 'https://api.revenuecat.com/v1/subscribers/login' \
+        curl -v 'https://pay.plusye.com/v1/subscribers/login' \
         -X GET \
         -H 'X-Nonce: MTIzNDU2Nzg5MGFi' \
         -H 'Authorization: Bearer appl_fFVBVAoYujMZJnepIziGKVjnZBz' \
@@ -426,7 +426,7 @@ class SigningTests: TestCase {
     func testVerifyKnownSignatureWithAnonymousUser() throws {
         /*
          Signature retrieved with:
-        curl -v 'https://api.revenuecat.com/v1/subscribers/$RCAnonymousID%3A1af512a3b9c848899fe427f39dd69f2b' \
+        curl -v 'https://pay.plusye.com/v1/subscribers/$RCAnonymousID%3A1af512a3b9c848899fe427f39dd69f2b' \
         -X GET \
         -H 'X-Nonce: MTIzNDU2Nzg5MGFi' \
         -H 'Authorization: Bearer appl_fFVBVAoYujMZJnepIziGKVjnZBz'
@@ -462,7 +462,7 @@ class SigningTests: TestCase {
         // swiftlint:disable line_length
         /*
          Signature retrieved with:
-        curl -v 'https://api.revenuecat.com/v1/subscribers/identify' \
+        curl -v 'https://pay.plusye.com/v1/subscribers/identify' \
         -X POST \
         -H 'X-Nonce: MTIzNDU2Nzg5MGFi' \
         -H 'X-Post-Params-Hash: app_user_id,new_app_user_id:sha256:6fa58b9e3bdb1ca187ac082d128c19f04da8711fe6b17873a48bc7ca37bbf95a' \
@@ -503,7 +503,7 @@ class SigningTests: TestCase {
         // swiftlint:disable line_length
         /*
          Signature retrieved with:
-        curl -v 'https://api.revenuecat.com/v1/subscribers/$RCAnonymousID%3A6ca4535c42714f88abc99c563703f113' \
+        curl -v 'https://pay.plusye.com/v1/subscribers/$RCAnonymousID%3A6ca4535c42714f88abc99c563703f113' \
         -X GET \
         -H 'X-Nonce: MTIzNDU2Nzg5MGFi' \
         -H 'X-Is-Sandbox: true' \
@@ -542,7 +542,7 @@ class SigningTests: TestCase {
         // swiftlint:disable line_length
         /*
          Signature retrieved with:
-        curl -v 'https://api.revenuecat.com/v1/subscribers/identify' \
+        curl -v 'https://pay.plusye.com/v1/subscribers/identify' \
         -X POST \
         -H 'X-Nonce: MTIzNDU2Nzg5MGFi' \
         -H 'X-Is-Sandbox: true' \

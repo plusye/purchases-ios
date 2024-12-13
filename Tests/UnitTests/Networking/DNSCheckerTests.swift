@@ -19,7 +19,7 @@ import XCTest
 
 class DNSCheckerTests: TestCase {
 
-    private let apiURL = URL(string: "https://api.revenuecat.com")!
+    private let apiURL = URL(string: "https://pay.plusye.com")!
     private let fakeSubscribersURL1 = URL(string: "https://0.0.0.0/subscribers")!
     private let fakeSubscribersURL2 = URL(string: "https://127.0.0.1/subscribers")!
     private let fakeOffersURL = URL(string: "https://0.0.0.0/offers")!
@@ -43,7 +43,7 @@ class DNSCheckerTests: TestCase {
             expect(DNSChecker.isBlockedURL(try XCTUnwrap(URL(string: urlString)))) == true
         }
 
-        expect(DNSChecker.isBlockedURL(try XCTUnwrap(URL(string: "https://api.revenuecat.com/offers")))) == false
+        expect(DNSChecker.isBlockedURL(try XCTUnwrap(URL(string: "https://pay.plusye.com/offers")))) == false
     }
 
     func testIsBlockedLocalHostFromError() {
